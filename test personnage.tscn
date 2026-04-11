@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://wv2fiypytd4"]
 
+[ext_resource type="PackedScene" uid="uid://dtgfyfidasnxy" path="res://peronnage scène.tscn" id="1_l6ehy"]
+
 [node name="TestPersonnage" type="Node3D" unique_id=400399292]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=764238284]
@@ -8,4 +10,7 @@ use_collision = true
 size = Vector3(17.335571, 0.2607422, 15.435059)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1090605354]
-transform = Transform3D(1, 0, 0, 0, 0.25924048, 0.9658128, 0, -0.9658128, 0.25924048, 0, 5.54929, 94.33335)
+transform = Transform3D(1, 0, 0, 0, -0.4507841, 0.892633, 0, -0.892633, -0.4507841, 0, 8.251177, -7.9080276)
+
+[node name="CharacterBody3D" parent="." unique_id=1403917832 instance=ExtResource("1_l6ehy")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -1.3872633, 0.8540025, -3.05476)
