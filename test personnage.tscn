@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://wv2fiypytd4"]
+
+[node name="TestPersonnage" type="Node3D" unique_id=400399292]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=764238284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8310575, 0.28910398, 0.14951134)
+use_collision = true
+size = Vector3(17.335571, 0.2607422, 15.435059)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1090605354]
+transform = Transform3D(1, 0, 0, 0, 0.25924048, 0.9658128, 0, -0.9658128, 0.25924048, 0, 5.54929, 94.33335)
