@@ -7,7 +7,7 @@ const JUMP_VELOCITY = 4.5
 var sens_horizontal = 0.5
 var sens_vertical = 0.5
 const CAMERA_MIN_ANGLE = -40
-const CAMERA_MAX_ANGLE = 30
+const CAMERA_MAX_ANGLE = 20
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
