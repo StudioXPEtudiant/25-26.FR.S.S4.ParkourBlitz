@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @onready var camera_mount = $camera_mount
-
+@onready var animation_player = $visuelle/Running/AnimationPlayer
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 var sens_horizontal = 0.5
@@ -32,6 +32,7 @@ func _physics_process(delta):
 	var input_dir = Input.get_vector("q", "d", "s", "z")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
+		animation_player.play("mixamo_com")
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 	else:
