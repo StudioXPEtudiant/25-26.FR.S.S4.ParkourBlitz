@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://bve70gp7oyusg"]
+
+[ext_resource type="PackedScene" uid="uid://d3rbxgm8cs5uq" path="res://Scenes/kenney_city-kit-roads/Models/GLB format/road-straight.glb" id="1_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://wi2qbl32k1w7" path="res://Scenes/kenney_city-kit-roads/Models/GLB format/road-curve.glb" id="2_jka67"]
+[ext_resource type="Script" uid="uid://0hleyl5p4g43" path="res://area_3d_2.gd" id="4_jka67"]
+[ext_resource type="PackedScene" uid="uid://bhuvhveamd5g" path="res://building_f.tscn" id="4_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://dtgfyfidasnxy" path="res://peronnage scène.tscn" id="5_jka67"]
+[ext_resource type="PackedScene" uid="uid://e2vp1yqwc5ej" path="res://building_j_2.tscn" id="6_i5arm"]
+[ext_resource type="PackedScene" uid="uid://bl7d6tl8afurj" path="res://feature_profiles/kenney_city-kit-commercial_2/Models/GLB format/building-j.glb" id="7_jsk3o"]
+[ext_resource type="PackedScene" uid="uid://l85lp6mpw3nw" path="res://feature_profiles/kenney_city-kit-commercial_2/Models/GLB format/building-f.glb" id="8_4arys"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_i5arm"]
+height = 19.333008
+radius = 9.711914
+
+[node name="Node3D" type="Node3D" unique_id=820897253]
+
+[node name="road-straight2" parent="." unique_id=1456469765 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0006604, -1.4901161e-08, 0.24805629)
+
+[node name="road-straight7" parent="." unique_id=950440576 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0006604, -1.4901161e-08, 0.24805629)
+
+[node name="road-straight8" parent="." unique_id=662290202 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0006604, -1.4901161e-08, 0.24805629)
+
+[node name="road-straight9" parent="." unique_id=1374567224 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0006604, -1.4901161e-08, 0.24805629)
+
+[node name="road-straight10" parent="." unique_id=1225545156 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0.257874)
+
+[node name="road-straight3" parent="." unique_id=2055143510 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0246273, -1.4901161e-08, 0.24805629)
+
+[node name="road-straight4" parent="." unique_id=468561245 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.024627328, -1.4901161e-08, 0.24805629)
+
+[node name="road-straight5" parent="." unique_id=350441620 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9753727, -1.4901161e-08, 0.24805629)
+
+[node name="road-straight6" parent="." unique_id=1160156948 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9753727, -1.4901161e-08, 0.23734081)
+
+[node name="road-straight11" parent="." unique_id=1278696989 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.9267612, -1.4901161e-08, 3.2391138)
+
+[node name="road-straight12" parent="." unique_id=2018142217 instance=ExtResource("1_r3fl7")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.9536383, -1.4901161e-08, 2.2420955)
+
+[node name="road-curve2" parent="." unique_id=365912712 instance=ExtResource("2_jka67")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.4422226, 0.0028615594, 0.7472071)
+
+[node name="CharacterBody3D" parent="." unique_id=1403917832 instance=ExtResource("5_jka67")]
+transform = Transform3D(-8.709126e-05, 0, 0.009999621, 0, 0.01, 0, -0.009999621, 0, -8.709126e-05, -1.7941288, 3.5509427, 1.4693389)
+
+[node name="Area3D2" type="Area3D" parent="CharacterBody3D" unique_id=819290195]
+script = ExtResource("4_jka67")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/Area3D2" unique_id=1112928927]
+transform = Transform3D(1, 0, 9.313226e-10, 0, 1, 0, -9.313226e-10, 0, 1, 0, 11.008301, 0)
+shape = SubResource("CylinderShape3D_i5arm")
+
+[node name="building-f" parent="." unique_id=720739834 instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6086493, 0, 1.3201883)
+
+[node name="building-f2" parent="." unique_id=1094152234 instance=ExtResource("4_r3fl7")]
+transform = Transform3D(1, 0, 0, 0, 1.0382496, 0, 0, 0, 1, 0.526845, -0.042428255, 1.3667867)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1867079353]
+transform = Transform3D(1, 0, 0, 0, 0.7753965, 0.63147455, 0, -0.63147455, 0.7753965, -1.0298166, 3.2901402, 4.083702)
+
+[node name="building-j2" parent="." unique_id=564718877 instance=ExtResource("6_i5arm")]
+transform = Transform3D(2, 0, 0, 0, 1.6436647, 0, 0, 0, 2, 3.6474695, 0, 1.89187)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=944941596]
+transform = Transform3D(1, 0, 0, 0, 0.999923, 0.012408973, 0, -0.012408973, 0.999923, -1.8201294, -0.41843876, 0.9992337)
+size = Vector3(26.340698, 0.23828125, 45.8235)
+
+[node name="building-j3" parent="." unique_id=848581727 instance=ExtResource("7_jsk3o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2976933, 0, 4.1187506)
+
+[node name="building-f3" parent="." unique_id=1969820629 instance=ExtResource("8_4arys")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9375777, 0, 4.145107)
+
+[node name="building-f4" parent="." unique_id=912222110 instance=ExtResource("8_4arys")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.827732, 0, 5.1254826)
+
+[node name="building-f5" parent="." unique_id=1335830105 instance=ExtResource("8_4arys")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -1.8780512, 0, -1.0652605)
+
+[node name="building-f6" parent="." unique_id=1456454634 instance=ExtResource("8_4arys")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.20598078, 0, -2.1751087)
+
+[node name="building-f7" parent="." unique_id=1114913762 instance=ExtResource("8_4arys")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.3901248, 0, -1.1429955)
+
+[node name="building-f8" parent="." unique_id=995147019 instance=ExtResource("8_4arys")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.660584, -4.7683716e-07, -1.5970361)
+
+[node name="building-f9" parent="." unique_id=281606663 instance=ExtResource("8_4arys")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.2266483, 4.7683716e-07, -2.696875)

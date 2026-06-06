@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @onready var camera_mount = $camera_mount
 @onready var animation_player = $visuelle/Running/AnimationPlayer
-const SPEED = 5.0
+const SPEED = 3
 const JUMP_VELOCITY = 4.5
 var sens_horizontal = 0.5
 var sens_vertical = 0.5

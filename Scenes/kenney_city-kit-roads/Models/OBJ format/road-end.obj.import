@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b2hxjyxhxh78o"
+path="res://.godot/imported/road-end.obj-c38a59c5da29f7845e3c960d09c40951.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road-end.obj-c38a59c5da29f7845e3c960d09c40951.mesh"]
+
+source_file="res://Scenes/kenney_city-kit-roads/Models/OBJ format/road-end.obj"
+dest_files=["res://.godot/imported/road-end.obj-c38a59c5da29f7845e3c960d09c40951.mesh", "res://.godot/imported/road-end.obj-c38a59c5da29f7845e3c960d09c40951.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
