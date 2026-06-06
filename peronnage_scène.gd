@@ -30,6 +30,7 @@ func _physics_process(delta):
 		velocity.y = JUMP_VELOCITY
 
 	var input_dir = Input.get_vector("q", "d", "s", "z")
+	var input_dir = Input.get_vector("d", "q", "s", "z")
 	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
 		animation_player.play("mixamo_com")
